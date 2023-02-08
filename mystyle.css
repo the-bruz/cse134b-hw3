@@ -39,3 +39,40 @@ footer {
     top: 65vh;
     border: 10px solid white;
 }
+
+nav {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-align: right;
+    font-family: "Oswald";
+    font-size: x-large;
+    display: block;
+    margin-bottom: 15px;
+    color: rgb(115, 149, 194);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+#title {
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+    font-family: "Oswald";
+    color: #add8e6e7;
+}
