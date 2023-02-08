@@ -1,0 +1,41 @@
+body {
+    background-image: linear-gradient(to right, rgb(115, 149, 194) 70vw, #add8e6e7 70vw);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+#self-description {
+    text-align: center;
+    top: 35vh;
+    left: 35vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: left;
+    font-family: 'Arial';
+}
+
+#self-description > h1 {
+    color: #add8e6e7;
+    font-size: 5vh;
+    margin: 0px auto;
+}
+
+#self-description > h2 {
+    color: #add8e6e7;
+    font-size: 3vh;
+    margin: 10px auto;
+}
+
+#portrait {
+    width: 25vh;
+    height: 25vh;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 70vw;
+    top: 65vh;
+    border: 10px solid white;
+}
