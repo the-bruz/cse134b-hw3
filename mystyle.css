@@ -1,3 +1,15 @@
+@media screen and (max-width: 600px) {
+    #portrait {
+        width: 30vw !important;
+        border: 5px solid white !important;
+    }
+}
+
+@keyframes font_increasing {
+    from {font-size: 1px;}
+    to {} 
+  }
+
 body {
     background-image: linear-gradient(to right, rgb(115, 149, 194) 70vw, #add8e6e7 70vw);
 }
@@ -6,10 +18,10 @@ footer {
     position: absolute;
     bottom: 0;
     color: white;
+    margin: 0.5vw;
 }
 
 #self-description {
-    text-align: center;
     top: 35vh;
     left: 35vw;
     transform: translate(-50%, -50%);
@@ -22,22 +34,33 @@ footer {
     color: #add8e6e7;
     font-size: 5vh;
     margin: 0px auto;
+    animation-name: font_increasing;
+    animation-duration: 4s;
 }
 
 #self-description > h2 {
     color: #add8e6e7;
     font-size: 3vh;
     margin: 10px auto;
+    animation-name: font_increasing;
+    animation-duration: 4s;
 }
 
 #portrait {
     width: 25vh;
-    height: 25vh;
+    height: auto;
     transform: translate(-50%, -50%);
     position: absolute;
     left: 70vw;
     top: 65vh;
     border: 10px solid white;
+    transition: 2s;
+}
+
+
+#portrait:hover {
+    width: 30vh;
+    height: auto;
 }
 
 nav {
@@ -54,7 +77,7 @@ nav > ul {
 
 .nav-link {
     text-align: right;
-    font-family: "Oswald";
+    font-family: "Oswald", "Arial Black";
     font-size: x-large;
     display: block;
     margin-bottom: 15px;
@@ -71,8 +94,28 @@ nav > ul {
 }
 
 #title {
+    position: absolute;
     margin-left: 1vw;
-    margin-top: 1.5vh;
+    margin-top: 1vh;
     font-family: "Oswald";
     color: #add8e6e7;
+    animation-name: font_increasing;
+    animation-duration: 4s;
+}
+
+.two_sides {
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+    grid-template-rows: 100vh;
+    margin:0px
+}
+
+.two_sides > main {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two_sides > aside {
+    grid-column: 2;
+    grid-row: 1;
 }

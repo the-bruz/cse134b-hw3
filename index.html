@@ -15,9 +15,30 @@
         src: url(assets/fonts/Oswald-VariableFont_wght.ttf);
      }
 </style>
-<body>
-    <header>
-        <h1 id="title">TheBruz</h1>
+<body class="two_sides">
+    <main>
+        <header>
+            <h1 id="title">TheBruz</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Main</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="self-description">
+            <h1>Software<br>Developer</h1>
+            <h2>Bruce Zhou</h2>
+        </div>
+
+        <footer>
+            <p>&copy Bruce Zhou 2023</p>
+        </footer>
+    </main>
+
+    <aside>
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-link active">Main</a></li>
@@ -25,22 +46,9 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <div id="self-description">
-        <h1>Software<br>Developer</h1>
-        <h2>Bruce Zhou</h2>
-    </div>
-
-    <img id="portrait" src="assets/photos/portrait.jpeg" alt="A portrait photo of Bruce Zhou">
-
-
-
-        
-    <footer>
-        <p>&copy Bruce Zhou 2023</p>
-    </footer>
-
+        <img id="portrait" src="assets/photos/portrait.jpeg" alt="A portrait photo of Bruce Zhou">
+    </aside>
 </body>
 
 </html>
