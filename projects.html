@@ -33,9 +33,12 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-
-        <img class="project_preview" alt="a preview for the current project" 
-            src="assets/photos/project1.png">
+        <picture>
+            <source media="(max-width:640px)" srcset="assets/photos/project1_phone.jpg">
+            <source media="(max-width:768px)" srcset="assets/photos/project1_tablet.png">
+            <img class="project_preview" alt="a preview for the current project" 
+                src="assets/photos/project1.png">
+        </picture>
 
         <a href="https://www.thebruz.com/rent_collector" class="project_link">Link to Project</a>
     </main>
